@@ -1,6 +1,6 @@
 # Profile motd
 class profile::motd (
-    String $content = 'Hello world from profile:motd default.',
+    String $content = 'Hello world from profile:motd default.\n',
 ) {
   class { 'motd':
     #template => 'motd/web_server.epp',
