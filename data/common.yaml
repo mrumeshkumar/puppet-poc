@@ -1,2 +1,2 @@
 nginx::port: 80
-profile::motd::content: "Hello from using common/webserver.yaml.\n"
+profile::motd::content: "Message crom from using data/common/common.yaml.\n"

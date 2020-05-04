@@ -13,6 +13,9 @@ node default{
   elsif $facts['hostgroup'] == 'dbserver' {
     include role::dbserver
   }
+  else{
+    notice( 'Matching HostGroup not found. \n')
+  }
 
 }
 
