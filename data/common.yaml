@@ -1,2 +1,2 @@
 nginx::port: 80
-myclass::content: "Hello from using common/webserver.yaml"
+profile::motd::content: "Hello from using common/webserver.yaml"

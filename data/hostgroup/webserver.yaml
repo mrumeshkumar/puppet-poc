@@ -1,1 +1,1 @@
-myclass::content: "Hello from using hostegroup/webserver.yaml"
+profile::nginx::content: "Hello from using hostegroup/webserver.yaml"

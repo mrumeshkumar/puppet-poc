@@ -5,14 +5,7 @@
 
 node default{
   # include role::dbserver
-  #include role::webserver
-  $myvar =$facts['hostgroup']
-  notice( "from www1: $myvar" )
- #class myclass(String $content){ 
-  # class ('role::webserver':
-   #     content => $content ,
-    #}
-  #}
+  include role::webserver
 }
 
 #if $facts['is_virtual'] {
