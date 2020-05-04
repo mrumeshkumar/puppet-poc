@@ -6,7 +6,7 @@
 node default{
   # include role::dbserver
   #include role::webserver
-  notify ("This is custom message:" $facts[hostgroup])
+  notify ("This is custom message:" $facts['hostgroup'])
  #class { 'role::webserver':
     #template => 'motd/web_server.epp',
   #  content => $content ,
