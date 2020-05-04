@@ -6,14 +6,13 @@
 node default{
   # include role::dbserver
   #include role::webserver
- # $myvar =$facts['hostgroup']
-  #notice( "from www1: $myvar" )
- class myclass(String $content) { 
-   class ('role::webserver':
-     #template => 'motd/web_server.epp',
-      content => $content ,
-    }
-  }
+  $myvar =$hostgroup
+  notice( "from www1: $myvar" )
+ #class myclass(String $content){ 
+  # class ('role::webserver':
+   #     content => $content ,
+    #}
+  #}
 }
 
 #if $facts['is_virtual'] {
