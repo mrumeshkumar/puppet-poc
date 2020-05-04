@@ -14,6 +14,3 @@ hierarchy:
 
   - name: "Per-host group"
     path: "hostgroup/%{facts.hostgroup}.yaml"
-
-  - name: "Common data"
-    path: "common.yaml"
