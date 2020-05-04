@@ -6,11 +6,11 @@
 node default{
   # include role::dbserver
   #include role::webserver
-  # notify ("This is custom message:" $custommessage)
- class { 'role::webserver':
+  notify ("This is custom message:" $facts[hostgroup])
+ #class { 'role::webserver':
     #template => 'motd/web_server.epp',
-    content => $content ,
-  }
+  #  content => $content ,
+  #}
 }
 
 #if $facts['is_virtual'] {
