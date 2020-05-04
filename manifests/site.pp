@@ -4,11 +4,16 @@
 #include ntp
 
 node default{
-
   $hostgroup = $facts['hostgroup']
   notice( "Name of HostGroup: $hostgroup" )
-  # include role::dbserver
-  include role::webserver
+  
+  if $facts['hostgroup'] == 'webserver'{
+    include role::webserver
+  }
+  elsif $facts['hostgroup'] == 'dbserver' {
+    include role::dbserver
+  }
+
 }
 
 #if $facts['is_virtual'] {

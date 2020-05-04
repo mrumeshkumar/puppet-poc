@@ -1,1 +1,3 @@
 profile::motd::content: "Hello from using hostegroup/webserver.yaml.\n"
+profile::ntp::$servers:
+  - '1.1.1.1' 
