@@ -4,5 +4,6 @@ class profile::ntp (
 ) {
 class { 'ntp':
     servers => $servers,
+    # servers => [ '1.1.1.1' ],
   }
 }
