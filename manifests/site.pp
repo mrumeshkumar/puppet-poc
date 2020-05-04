@@ -8,7 +8,7 @@ node default{
   #include role::webserver
  # $myvar =$facts['hostgroup']
   #notice( "from www1: $myvar" )
- class { 'role::webserver':
+ class myclass(String $content) { 'role::webserver':
     #template => 'motd/web_server.epp',
     content => $content ,
   }
