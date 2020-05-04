@@ -7,7 +7,7 @@ node default{
   # include role::dbserver
   #include role::webserver
   # notify ("This is custom message:" $custommessage)
- class { 'webserver':
+ class { 'role::webserver':
     #template => 'motd/web_server.epp',
     content => $content ,
   }
