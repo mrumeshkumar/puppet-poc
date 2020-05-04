@@ -4,6 +4,9 @@
 #include ntp
 
 node default{
+
+  $hostgroup = $facts['hostgroup']
+  notice( "Name of HostGroup: $hostgroup" )
   # include role::dbserver
   include role::webserver
 }
