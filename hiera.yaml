@@ -12,5 +12,8 @@ hierarchy:
   - name: "Per-environment defaults"
     path: "%{facts.environment}/default.yaml"
 
+  - name: "Per-host group"
+    path: "hostgroup/%{facts.hostgroup}.yaml"
+
   - name: "Common data"
     path: "common.yaml"
