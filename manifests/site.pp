@@ -14,7 +14,7 @@ node default{
     include role::dbserver
   }
   else{
-    notice( 'Matching HostGroup not found. \n')
+    notice( 'Matching HostGroup not found.')
   }
 
 }
