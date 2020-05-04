@@ -1,1 +1,1 @@
-profile::nginx::content: "Hello from using hostegroup/webserver.yaml"
+profile::motd::content: "Hello from using hostegroup/webserver.yaml"
