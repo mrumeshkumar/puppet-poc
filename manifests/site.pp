@@ -6,7 +6,7 @@
 node default{
   # include role::dbserver
   #include role::webserver
-  $myvar =$hostgroup
+  $myvar =$facts['hostgroup']
   notice( "from www1: $myvar" )
  #class myclass(String $content){ 
   # class ('role::webserver':
